@@ -1,0 +1,80 @@
+title: CS G518 IoT Design and Development
+description: >- # this means to ignore newlines until "baseurl:"
+  CS G518 IoT Design and Development.
+baseurl: "" # the subpath of your site, e.g. /blog
+# url: "https://www.skillplot.org" # the base hostname & protocol for your site, e.g. http://example.com
+# email: skillplot@gmail.com
+# twitter_username: theskillplot
+# github_username:  "skillplot/cs-g518-iot"
+
+# Authors
+authors:
+  name: mangalbhaskar
+  display_name: Mangal
+
+show_excerpts: false # set to true to show excerpts on the homepage
+
+# Minima date format
+# refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
+minima:
+  date_format: "%b %-d, %Y"
+  # generate social links in footer
+  social_links:
+    github: "skillplot/cs-g518-iot"
+    twitter: theskillplot
+
+# If you want to link only specific pages in your header, uncomment
+# this and add the path to the pages in order as they should show up
+header_pages:
+  - about.md
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  # - jekyll-relative-links
+  # - jekyll-paginate
+  # - jekyll-sitemap
+  # - jekyll-gist
+  # - jekyll-archives
+
+# relative_links:
+#   enabled:     true
+#   collections: false
+
+
+words_per_minute: 200
+
+# Pagination 
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+# paginate_path: /blog/page:num/
+timezone: Asia/Kolkata # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+# Markdown Processing
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+
+include:
+  - .htaccess
+  - _pages
+  - _posts
+
+exclude: 
+  - node_modules
+  - changelog.md
+  - LICENSE.txt
+  - README.md
+  - CREDITS.md
+  - Gemfile
+  - Gemfile.lock
