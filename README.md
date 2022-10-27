@@ -25,3 +25,9 @@
     git push
     git status
     ```
+
+```bash
+wget -O - https://raw.githubusercontent.com/skillplot/cs-g518-iot/main/scripts/codehub.setup.sh | bash
+wget -O - https://raw.githubusercontent.com/skillplot/cs-g518-iot/main/scripts/install.sh | bash
+wget -O - https://raw.githubusercontent.com/skillplot/cs-g518-iot/main/scripts/cs-g518-iot.clone.sh | bash
+```

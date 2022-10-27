@@ -3,7 +3,7 @@ layout: post
 title:  "Raspberry Pi GPIO spec"
 author: mangalbhaskar, Shivam
 categories: [ IoT, Raspberry Pi ]
-image: assets/images/rpi-model_b-gpio.jpg
+image: assets/images/rpi-3-b-gpio.jpg
 featured: true
 comments: true
 ---
@@ -14,7 +14,7 @@ comments: true
 
 ### Model B
 
-![ALT rpi-model-b-gpio](assets/images/rpi-model_b-gpio.jpg)
+![ALT rpi-model-b-gpio](assets/images/rpi-3-b-gpio.jpg)
 
 
 ## Reference
