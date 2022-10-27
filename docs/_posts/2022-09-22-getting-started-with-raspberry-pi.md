@@ -53,6 +53,8 @@ ssh pi@192.168.0.104
 ## Configure RPI for GUI
 
 ```bash
+raspinfo
+#
 raspi-config
 ```
 
