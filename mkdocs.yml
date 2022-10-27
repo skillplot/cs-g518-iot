@@ -1,0 +1,54 @@
+site_name: Pragmatic-NodeJs
+site_description: Codebase for Pragmatic NodeJs book from pragmatic python book series. An opinionated practical tutorials on NodeJs framework.
+# site_url: 
+site_author: skillplot
+theme: 
+  name: material
+  # custom_dir: 
+  # static_templates: 
+  # include_sidebar: false
+  palette:
+    scheme: preference
+    primary: teal
+    accent: amber
+  # icon:
+  #   repo: fontawesome/brands/github-alt
+  # logo: img/icon-white.svg
+  # favicon: img/favicon.png
+  language: en
+repo_name: skillplot/pragnodejs
+repo_url: https://github.com/skillplot/pragnodejs
+# edit_uri: '?query=root/path/docs/'
+# edit_uri: 'blob/master/'
+edit_uri: ''
+remote_branch: 
+remote_name:  
+docs_dir: docs
+site_dir: _site
+# extra_css: 
+# extra_javascript: 
+# extra: 
+use_directory_urls: false
+# dev_addr: 
+plugins: 
+  - search: 
+      separator: '[\s\-\.]+'
+  - markdownextradata:
+      data: data
+nav:
+  - Pragmatic-NodeJs: index.md
+markdown_extensions: 
+  - toc: 
+      permalink: true
+      title: Table of contents
+      toc_depth: 3
+  # - markdown_include.include:
+  #     base_path: docs
+  - smarty 
+  - sane_lists
+  - admonition
+  - codehilite
+  - extra
+# extra:
+# extra_css:
+# extra_javascript:

@@ -38,14 +38,11 @@ ssh pi@192.168.0.104
 raspi-config
 ```
 
-=> Interface Options => VNC => enable the service => Finish => Reboot required
-
-Download & Install VNC viewer on Laptop
-https://www.realvnc.com/en/connect/download/viewer/#
+* Interface Options => VNC => enable the service => Finish => Reboot required
+* Download & Install VNC viewer on Laptop
 
 
-h20220113@bits.pilani.bits.ac.in
-p20210469
+## References
 
-
-
+* [Download & Install VNC viewer on Laptop](https://www.realvnc.com/en/connect/download/viewer/#)
+* [Raspberrypi Documentation](https://www.raspberrypi.com/documentation/)

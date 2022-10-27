@@ -1,0 +1,3 @@
+recursive-include csg518iot/data *.yml
+recursive-include csg518iot/data *.csv
+recursive-include csg518iot/data *.json

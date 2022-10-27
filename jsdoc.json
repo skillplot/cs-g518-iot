@@ -1,0 +1,67 @@
+{
+  "tags": {
+    "allowUnknownTags": true
+  },
+  "source": {
+    "include": [
+      "src"
+    ],
+    "exclude": [
+      "node_modules/",
+      "**/*/node_modules/"
+    ],
+    "includePattern": ".+\\.js(doc|x)?$",
+    "excludePattern": "(^|\\/|\\\\)_"
+  },
+  "plugins": [
+    "plugins/markdown",
+    "plugins/summarize"
+  ],
+  "markdown.hardwrap": true,
+  "markdown": {
+    "excludeTags": [
+      "author"
+    ],
+    "hardwrap": true
+  },
+  "templates": {
+    "cleverLinks": true,
+    "monospaceLinks": true
+  },
+  "sourceType": "module",
+  "opts": {
+    "encoding": "utf8",
+    "destination": "./_site/jsdocs/",
+    "recurse": true,
+    "template": "node_modules/clean-jsdoc-theme",
+    "theme_opts": {
+      "// \"theme\"": "dark",
+      "theme": "light",
+      "title": "Pragmatic NodeJs",
+      "footer": "\u00a9 Copyright 2022.  <a href='https://skillplot.org'>mangalbhaskar (Bhaskar Mangal).</a> All Rights Reserved.",
+      "meta": [
+        {
+          "name": "Author",
+          "content": "Skillplot"
+        },
+        {
+          "name": "Description",
+          "content": "Codebase for Pragmatic nodejs book from pragmatic python book series. An opinionated nodejs practical tutorials."
+        }
+      ],
+      "menu": [
+        {
+          "title": "Git",
+          "id": "git",
+          "link": "https://github.com/skillplot/pragnodejs.git"
+        }
+      ],
+      "resizeable": {
+        "navbar": {
+          "min": "256",
+          "max": "512"
+        }
+      }
+    }
+  }
+}
