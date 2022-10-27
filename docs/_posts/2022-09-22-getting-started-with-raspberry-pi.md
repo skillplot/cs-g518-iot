@@ -9,6 +9,24 @@ comments: true
 ---
 
 
+## Overview
+
+1. Installing OS in Raspberry Pi
+2. Installing through headless system (Enabling Wifi and SSH)
+3. Remote access through your laptop
+
+The following steps are required to be performed to complete above all tasks.
+
+1. Install Raspberry Pi Imager in your desktop or laptop
+2. Insert the Micro SD Card into Card Reader.
+3. Inject the Card reader into laptop and format it.
+4. Install the OS into Micro SD Card using Imager.
+5. Install Putty into your laptop.
+6. Connect Raspberry Pi through Putty.
+7. Use Remote Desktop Connect (windows application) for remote connection
+8. Surf the web browser through laptop
+
+
 ## Install RPI Image on the SD Card
 
 ```bash
@@ -44,5 +62,9 @@ raspi-config
 
 ## References
 
-* [Download & Install VNC viewer on Laptop](https://www.realvnc.com/en/connect/download/viewer/#)
+
+The detailed instructions to perform the above tasks can be found in the following web link.
+
+* [Raspberrypi Getting Started](https://www.raspberrypi.org/documentation/computers/getting-started.html)
 * [Raspberrypi Documentation](https://www.raspberrypi.com/documentation/)
+* [Download & Install VNC viewer on Laptop](https://www.realvnc.com/en/connect/download/viewer/#)

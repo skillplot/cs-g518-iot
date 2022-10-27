@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Getting Started With Raspberry Pi"
+title:  "Raspberry Pi GPIO spec"
 author: mangalbhaskar, Shivam
 categories: [ IoT, Raspberry Pi ]
+image: assets/images/rpi-model_b-gpio.jpg
 featured: true
 comments: true
 ---
@@ -13,7 +14,7 @@ comments: true
 
 ### Model B
 
-![ALT rpi-model-b-gpio](images/rpi-model_b-gpio.jpg)
+![ALT rpi-model-b-gpio](assets/images/rpi-model_b-gpio.jpg)
 
 
 ## Reference
