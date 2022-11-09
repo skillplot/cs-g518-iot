@@ -60,6 +60,7 @@
 !tests/
 !reports/
 !wsgi-bin/
+!projects/
 
 ## AI weights to be excluded
 **/*.pt
