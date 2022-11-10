@@ -1,0 +1,104 @@
+{
+  "name": "pragmatic-nodejs",
+  "version": "0.0.2",
+  "description": "Codebase for Pragmatic nodejs book from pragmatic python book series. An opinionated nodejs practical tutorials.",
+  "author": "mangalbhaskar",
+  "contributors": [
+    "skillplot"
+  ],
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {},
+  "files": [
+    "LICENSE",
+    "README.md",
+    "src/"
+  ],
+  "bin": {},
+  "scripts": {
+    "jsdoc": "jsdoc",
+    "prettier:check": "prettier --check .",
+    "prettier:fix": "prettier --write .",
+    "eslint:check": "eslint .",
+    "eslint:fix": "eslint --fix .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-hello": "nodemon src/web_server_hello.js --exec babel-node --presets babel-preset-env",
+    "start-ws-server": "nodemon src/ws_server.js --exec babel-node --presets babel-preset-env",
+    "start-ws-client": "nodemon src/ws_client.js --exec babel-node --presets babel-preset-env",
+    "start-stream": "nodemon src/web_server_stream.js --exec babel-node --presets babel-preset-env",
+    "lint": "eslint src/js"
+  },
+  "readmeFilename": "README.md",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "keywords": [
+    "IoT",
+    "tutorials",
+    "pragmatic",
+    "course",
+    "Artificial Intelligence"
+  ],
+  "license": "BSD-3.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skillplot/pragnodejs.git"
+  },
+  "homepage": "https://skillplot.org",
+  "bugs": null,
+  "subsets": {
+    "build": {
+      "include": [
+        "babel-cli",
+        "dotenv",
+        "webpack"
+      ]
+    },
+    "test": {
+      "exclude": [
+        "eslint",
+        "prettier"
+      ]
+    },
+    "container": {
+      "exclude": [
+        "nativescript",
+        "serverless",
+        "ngrok"
+      ]
+    }
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.8",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.6",
+    "nodemon": "^2.0.4",
+    "opencv4nodejs-prebuilt": "^5.3.4",
+    "pm2": "^4.4.1",
+    "socket.io": "^4.5.2",
+    "swagger-jsdoc": "^4.0.0",
+    "swagger-ui-express": "^4.1.4",
+    "ws": "^7.2.5"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.1.0",
+    "babel-preset-env": "^1.7.0",
+    "clean-jsdoc-theme": "^3.3.4",
+    "eslint": "^8.15.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-eslint-plugin": "^4.2.0",
+    "eslint-plugin-import": "^2.26.0",
+    "install-subset": "^1.0.0",
+    "jsdoc": "^3.6.10",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.6.2",
+    "swagger-autogen": "^2.19.0",
+    "swagger-ui-express": "^4.3.0"
+  },
+  "engines": {
+    "node": ">= v12.22.12"
+  }
+}
