@@ -48,6 +48,9 @@ ip a
 ## nmap - Network exploration tool and security / port scanner
 nmap 192.168.0.*
 ssh pi@192.168.0.104
+
+## default IP of RPI over static LAN is 169.254.129.202
+ping 169.254.129.202
 ```
 
 ## Configure RPI for GUI

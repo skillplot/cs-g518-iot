@@ -57,6 +57,7 @@
 !scripts/
 !external/
 !src/
+!snippets/
 !tests/
 !reports/
 !wsgi-bin/
