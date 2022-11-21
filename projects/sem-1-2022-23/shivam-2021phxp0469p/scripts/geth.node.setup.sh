@@ -21,7 +21,7 @@ function start_node() {
 
 ## step-4; in new terminal
 function get_node_info() {
-  # - Open new terminal
+  # Open new terminal
   geth attach node1/geth.ipc
 
   # and in javascript console type below command:
@@ -31,15 +31,15 @@ function get_node_info() {
 ## step-5; type of node configuration: peer-to-peer;
 ## TODO: work in progress
 function peer_to_peer() {
+  echo "peer-to-peer"
+  # # and copy the enode of second node into first node console
+  # admin.addPeer("enode://fa74ba03b68b149f9ccd89ad2193b10293dbdb0500f5765d0ef2e86742a9f9a73131b50ece9620e80b7e2c768ba773edfd8eadbc12c65fefc063bca6144512d1@127.0.0.1:30304")
+  # admin.peers
 
-  # -- and copy the enode of second node into first node console
-  admin.addPeer("enode://fa74ba03b68b149f9ccd89ad2193b10293dbdb0500f5765d0ef2e86742a9f9a73131b50ece9620e80b7e2c768ba773edfd8eadbc12c65fefc063bca6144512d1@127.0.0.1:30304")
-  admin.peers
-
-  # -- and copy the enode of third node into second node console
-  admin.addPeer("enode://f147f0869a33c854fc4839b4d8256762bc7f4cbee346ab2eb11dd49fa8c30e886cb6bbef342870441d10349aa47cbcdb277f53bb185e3125a845503cb320418a@127.0.0.1:30305")
-  # -- and check the peers
-  admin.peers
+  # # and copy the enode of third node into second node console
+  # admin.addPeer("enode://f147f0869a33c854fc4839b4d8256762bc7f4cbee346ab2eb11dd49fa8c30e886cb6bbef342870441d10349aa47cbcdb277f53bb185e3125a845503cb320418a@127.0.0.1:30305")
+  # # and check the peers
+  # admin.peers
 }
 
 
