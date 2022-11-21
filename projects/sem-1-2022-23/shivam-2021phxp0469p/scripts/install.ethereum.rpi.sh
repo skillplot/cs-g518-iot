@@ -21,7 +21,13 @@ echo "PROG: ${PROG}"
 echo "FILE: ${FILE}"
 echo "URL: ${URL}"
 
-wget ${URL}
-tar -xvf ${FILE}
-cd ${PROG}
-sudo mv geth /usr/local/bin/
+type geth &>/dev/null || {
+    echo "Ethereum will be installed. sudo access required".
+    wget -c ${URL}
+    tar -xvf ${FILE}
+    cd ${PROG}
+    sudo mv geth /usr/local/bin/
+} && {
+  echo "geth is already installed"
+  geth version
+}
