@@ -27,7 +27,7 @@ type geth &>/dev/null || {
     tar -xvf ${FILE}
     cd ${PROG}
     sudo mv geth /usr/local/bin/
+    geth version
 } && {
   echo "geth is already installed"
-  geth version
 }
