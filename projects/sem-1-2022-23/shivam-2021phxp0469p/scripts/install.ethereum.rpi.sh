@@ -21,7 +21,7 @@ echo "PROG: ${PROG}"
 echo "FILE: ${FILE}"
 echo "URL: ${URL}"
 
-# wget ${URL}
-# tar -xvf ${FILE}
-# cd ${PROG}
-# sudo mv geth /usr/local/bin/
+wget ${URL}
+tar -xvf ${FILE}
+cd ${PROG}
+sudo mv geth /usr/local/bin/
