@@ -57,10 +57,12 @@
 !scripts/
 !external/
 !src/
+!snippets/
 !tests/
 !reports/
 !wsgi-bin/
 !projects/
+!labs/
 
 ## AI weights to be excluded
 **/*.pt

@@ -57,7 +57,8 @@ sudo iwlist wlan0 scan
 ```bash
 # https://raspberrypi.stackexchange.com/a/123889
 sudo killall wpa_supplicant
-sudo wpa_supplicant -i wlan0 -D wext -c/etc/wpa_supplicant/wpa_supplicant.conf -B
+sudo wpa_supplicant -i wlan0 -D wext -c /etc/wpa_supplicant/wpa_supplicant.conf -B
+wpa_cli -i wlan0 reconfigure
 ```
 
 
