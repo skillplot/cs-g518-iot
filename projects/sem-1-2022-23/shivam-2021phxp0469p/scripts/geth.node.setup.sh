@@ -1,21 +1,33 @@
 
 #!/bin/bash
 
+function log.echo() {
+  (>&2 echo -e "${bred}$*${nocolor}")
+}
+
+
 ## step-1
 function create_node() {
-  echo "geth init --datadir $(uuid) genesis.json"
+  type uuid &>/dev/null || sudo apt install uuid
+  local node_name=$(uuid)
+  log.echo "created node_name: ${node_name}"
+  # geth init --datadir ${node_name} genesis.json
+  echo ${node_name}
 }
 
 
 ## step-2
 function add_account() {
-  echo "optional; todo"
-  geth --datadir node1 account new
+  local node_name=$1
+  echo "add account for node: ${node_name}"
+  # geth --datadir ${node_name} account new
 }
 
 
 ## step-3
 function start_node() {
+  local node_name
+  # geth --datadir node1 --networkid 1234 --http --allow-insecure-unlock --nodiscover --port 30303
   geth --datadir node1 --networkid 1234 --http --allow-insecure-unlock --nodiscover --port 30303
 }
 
@@ -45,7 +57,8 @@ function peer_to_peer() {
 
 function main() {
   echo "main"
-  create_node "$@"
+  local node_name=$(create_node "$@")
+  add_account ${node_name}
 }
 
 
