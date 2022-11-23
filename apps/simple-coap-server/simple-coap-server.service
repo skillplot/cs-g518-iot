@@ -1,0 +1,16 @@
+[Unit]
+Description=simple-coap-server Daemon
+After=network.target
+
+[Service]
+Type=simple
+User=baaz
+Group=baaz
+WorkingDirectory=/home/baaz/.nvm/versions/node/v16.3.0/lib/node_modules/simple-coap-server
+EnvironmentFile=-/home/baaz/.simple/coap/server.env
+Environment="PATH=/home/baaz/.nvm/versions/node/v16.3.0/bin:/home/baaz/.npm-packages/bin:/home/baaz/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+
+
+Restart=on-failure
+[Install]
+WantedBy=multi-user.target
