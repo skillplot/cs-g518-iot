@@ -1,8 +1,23 @@
-#!/bin/bash
+#/bin/bash
+
+## Copyright (c) 2021 mangalbhaskar. All Rights Reserved.
+##__author__ = 'mangalbhaskar'
+###----------------------------------------------------------
+## MQTT
+#
+## References:
+## https://randomnerdtutorials.com/how-to-install-mosquitto-broker-on-raspberry-pi/
+###----------------------------------------------------------
+
 
 sudo apt -y update
 sudo apt -y install mosquitto
 sudo apt -y install mosquitto-clients
+
+sudo systemctl enable mosquitto.service
+
+mosquitto -v
+
 
 # sudo vi /etc/mosquitto/mosquitto.conf
 

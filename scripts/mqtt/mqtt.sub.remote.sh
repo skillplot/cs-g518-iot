@@ -1,4 +1,3 @@
-#!/bin/bash
 
 ## Copyright (c) 2021 mangalbhaskar. All Rights Reserved.
 ##__author__ = 'mangalbhaskar'
@@ -29,9 +28,9 @@ qos=$2
 [[ ! -z ${topic} ]] || topic="test"
 [[ ! -z ${qos} ]] || qos=0
 
+username=pi
+password=pi12345
+host=localhost
 port=1883
-for i in $(seq 1 1 10); do
-  echo -e "$i: ${topic}\n";
-  sleep 1;
-  mosquitto_pub -d -t ${topic} -m "Namaste, World!" -p ${port} -q ${qos};
-done
+# mosquitto_sub -d -t ${topic} -p 1883
+mosquitto_sub -d -u ${username} -P ${password} -h ${host} -t ${topic} -p ${port} -q ${qos};

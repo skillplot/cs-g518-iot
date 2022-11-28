@@ -1,5 +1,6 @@
 #!/bin/bash
 
+mosquitto -v
 sudo service mosquitto start
 
 ## configure mosquitto

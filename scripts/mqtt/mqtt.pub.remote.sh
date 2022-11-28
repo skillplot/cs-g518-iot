@@ -29,9 +29,15 @@ qos=$2
 [[ ! -z ${topic} ]] || topic="test"
 [[ ! -z ${qos} ]] || qos=0
 
+username=pi
+password=pi12345
+host=rpi.local
+# host=localhost
 port=1883
 for i in $(seq 1 1 10); do
-  echo -e "$i: ${topic}\n";
+  echo -e "\n$i: ${topic}";
+  message="[${i}] Namaste, World from other side of the world"
+  mosquitto_pub -d -u ${username} -P ${password} -h ${host} -t ${topic} -m "${message}" -p ${port} -q ${qos};
   sleep 1;
-  mosquitto_pub -d -t ${topic} -m "Namaste, World!" -p ${port} -q ${qos};
+  # sleep 0.2;
 done
