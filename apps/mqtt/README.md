@@ -5,8 +5,7 @@ MQTT publish and subscribe model
 
 
 ## Acknowledgements
- Install paho MQTT 
- https://pypi.org/project/paho-mqtt/
+ Install paho MQTT using pip install paho-mqtt
  
 Detail description MQTT server
  https://medium.com/python-point/mqtt-basics-with-python-examples-7c758e605d4
