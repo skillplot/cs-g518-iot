@@ -1,6 +1,6 @@
 ---
-title: Blockchain Private Network
-description: Blockchain Private Network
+title: Blockchain Private Network on Raspberry PI
+description: Blockchain Private Network on Raspberry PI
 ---
 
 
@@ -15,10 +15,32 @@ We are going to create three nodes on Private Ethereum Blockchain that is Go eth
 
 1. Installing Go Ethereum
     ```bash
-    sudo add-apt-repository -y ppa:ethereum/ethereum
-    sudo apt-get update
-    sudo apt-get install ethereum
+    (i) To see the Rpi processor model:
+
+    cat /proc/cpuinfo 
+
+    (ii) To download tar file according to model:
+    wget "https://gethstore.blob.core.windows.net/builds/geth-linux-arm7-1.5.7-da2a22c3.tar.gz"
+
+    (iii) To extract tar file:
+    tar "zxvf geth-linux-arm7-1.5.7-da2a22c3.tar.gz" 
+
+    (iv) Change the directory:
+    cd "geth-linux-arm7-1.5.7-da2a22c3"
+     
+    (v) Install geth: 
+    sudo cp geth /usr/local/bin
     ```
+
+  ## Rough notes
+* https://geth.ethereum.org/downloads/ : to download respective ethereum version
+* https://stackoverflow.com/a/47274698
+
+So AArch64 and ARM64 refer to the same thing.
+
+aarch64 is 64bit
+armv7 is 32 bit
+  
 2. To check whether geth is installed
     ```bash
     geth -h
@@ -143,14 +165,7 @@ We are going to create three nodes on Private Ethereum Blockchain that is Go eth
 
     ```
 
-## Rough notes
 
-* https://stackoverflow.com/a/47274698
-
-So AArch64 and ARM64 refer to the same thing.
-
-aarch64 is 64bit
-armv7 is 32 bit
 
 
 
