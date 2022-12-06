@@ -1,13 +1,13 @@
 Pothole detection: 
 
-Components used: 
-Raspberry Pi
-Pi camera 5mp
+Components used:  <br />
+Raspberry Pi <br />
+Pi camera 5mp <br />
 
-To download of your local machine and to test on the raspberry pi, Please follow below guidelines:
+To download of your local machine and to test on the raspberry pi, Please follow below guidelines: <br />
 
-Install libraries:
-Numpy: pip install numpy
-cv2:  pip install opencv-python
-skimage: pip install scikit-image
-imutils: pip install imutils
+Install libraries:  <br />
+Numpy: pip install numpy  <br />
+cv2:  pip install opencv-python  <br />
+skimage: pip install scikit-image <br />
+imutils: pip install imutils <br />
