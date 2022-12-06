@@ -4,7 +4,7 @@ Components used:  <br />
 Raspberry Pi <br />
 Pi camera 5mp <br />
 
-To download of your local machine and to test on the raspberry pi, Please follow below guidelines: <br />
+To download on your local machine and to test on the raspberry pi, Please follow below guidelines: <br />
 
 Install libraries:  <br />
 Numpy: pip install numpy  <br />
