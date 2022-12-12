@@ -5,14 +5,17 @@ import imutils
 import numpy as np
 import skimage
 from skimage.metrics import structural_similarity as ssim       #Facilitates in finding the differences between two grayscale images.
+import tweepy
+#tweepy allows to post tweets
+#twython can also be used
 
 #from skimage import measure
 #skimage.metrics.structural_similarity.
 #from skimage.metrics import structural_similarity as ssim
 #Load images with paths
-roadImgOld = cv2.imread("images/roadOriginal.jpg")
+roadImgOld = cv2.imread("images/unaffected.jpg")
 roadImgOld = cv2.resize(roadImgOld,(600,360))
-roadImgNew = cv2.imread("images/damagedRoad.jpg")
+roadImgNew = cv2.imread("images/affected.jpg")
 roadImgNew = cv2.resize(roadImgNew,(600,360))
 
 #Converting images to grayscale
@@ -54,7 +57,50 @@ x = np.zeros((360,10,3), np.uint8)
 #hstack is used to concatenate images horizontally
 result = np.hstack((roadImgOld, x, roadImgNew))
 cv2.imshow("Final differences",  result)
-                    
+
+cv2.imwrite("images/differences.jpeg", result)
+'''
+
+
+# your twitter consumer and access information goes here
+# note: these are garbage strings and won't work
+apiKey = 'qfO5I8LoBFVsEkcptGV2nqBhi'
+apiSecret = 'ibQJRhFXQmljR3wI3Wm6jBu7E9b3DqGa7i8Rxeqp2abpWSxUbM'
+accessToken = '1601813291369922560-ifWT5MrOBwm8JIWO37RnjQMuvjaFkw'
+accessTokenSecret = 'VxaDYDUEJo74Gyb5FWAy3qkPivTkjM36hdLfd4rUv298G'
+ # Upload image
+
+
+
+
+
+#Donot use the method: api.update_status(status=tweetStr) #This is v1.1, Currently v2 is being used.
+#response = api.create_tweet(text='Test Tweet IoT-2022', media_ids=[media.media_id])
+'''
+
+apiKey = 'qfO5I8LoBFVsEkcptGV2nqBhi'
+apiSecret = 'ibQJRhFXQmljR3wI3Wm6jBu7E9b3DqGa7i8Rxeqp2abpWSxUbM'
+accessToken = '1601813291369922560-ifWT5MrOBwm8JIWO37RnjQMuvjaFkw'
+accessTokenSecret = 'VxaDYDUEJo74Gyb5FWAy3qkPivTkjM36hdLfd4rUv298G'
+
+'''
+client = tweepy.Client(consumer_key=apiKey,
+auth = tweepy.OAuthHandler(apiKey, apiSecret)
+auth.set_access_token(accessToken, accessTokenSecret) 
+api = tweepy.API(auth)  # Upload image  
+media = api.media_upload("images/cameraTest.jpg")
+tweet = "Test Tweet IoT-2022 with Image" 
+post_result = api.create_tweet(status=tweet, media_ids=[media.media_id])   
+'''
+
+auth = tweepy.OAuthHandler(apiKey, apiSecret)
+auth.set_access_token(accessToken, accessTokenSecret) 
+
+api = tweepy.API(auth)  # Upload image  
+media = api.media_upload("images/differences.jpeg")
+
+tweet = "*Please Ignore* Test Tweet IoT-2022 with Image" 
+post_result = api.update_status(status=tweet, media_ids=[media.media_id])     #Please note, elevated access is needed to tweet with images
 cv2.waitKey(0)
 cv2.destroyAllWindows()
                     
