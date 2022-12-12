@@ -77,11 +77,11 @@ accessTokenSecret = 'VxaDYDUEJo74Gyb5FWAy3qkPivTkjM36hdLfd4rUv298G'
 #Donot use the method: api.update_status(status=tweetStr) #This is v1.1, Currently v2 is being used.
 #response = api.create_tweet(text='Test Tweet IoT-2022', media_ids=[media.media_id])
 '''
-
-apiKey = 'qfO5I8LoBFVsEkcptGV2nqBhi'
-apiSecret = 'ibQJRhFXQmljR3wI3Wm6jBu7E9b3DqGa7i8Rxeqp2abpWSxUbM'
-accessToken = '1601813291369922560-ifWT5MrOBwm8JIWO37RnjQMuvjaFkw'
-accessTokenSecret = 'VxaDYDUEJo74Gyb5FWAy3qkPivTkjM36hdLfd4rUv298G'
+#Update these with actual keys
+apiKey = '**'
+apiSecret = '***'
+accessToken = '***'
+accessTokenSecret = '***G'
 
 '''
 client = tweepy.Client(consumer_key=apiKey,
