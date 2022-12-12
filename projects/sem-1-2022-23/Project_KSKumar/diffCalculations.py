@@ -67,10 +67,10 @@ cv2.imwrite("images/differences.jpeg", result)
 
 # your twitter consumer and access information goes here
 # note: these are garbage strings and won't work
-apiKey = 'qfO5I8LoBFVsEkcptGV2nqBhi'
-apiSecret = 'ibQJRhFXQmljR3wI3Wm6jBu7E9b3DqGa7i8Rxeqp2abpWSxUbM'
-accessToken = '1601813291369922560-ifWT5MrOBwm8JIWO37RnjQMuvjaFkw'
-accessTokenSecret = 'VxaDYDUEJo74Gyb5FWAy3qkPivTkjM36hdLfd4rUv298G'
+apiKey = '**'
+apiSecret = '**************'
+accessToken = '*-ifWT5Mr********JIWO37RnjQMuvjaFkw'
+accessTokenSecret = '***'
  # Upload image
 
 
