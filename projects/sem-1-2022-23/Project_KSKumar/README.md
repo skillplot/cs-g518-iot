@@ -1,4 +1,4 @@
-Pothole detection: 
+Pothole detection: An old image of the road is used to compare with a fresh image to find if potholes exists.
 
 Components used:  <br />
 Raspberry Pi <br />
@@ -11,3 +11,12 @@ Numpy: pip install numpy  <br />
 cv2:  pip install opencv-python  <br />
 skimage: pip install scikit-image <br />
 imutils: pip install imutils <br />
+
+<b>diffCalculations.py</b> can be used to post damaged road images on twitter. Two images will be compared and the potholes will be highlighted with rectangular boxes. <br />
+Update the access tokens and api keys before using it on raspberry pi.
+ <br />
+diffCal-Email-Picam.py can be used to mail the damaged road images. Two images will be compared and the potholes will be highlighted with rectangular boxes. <br />
+Please update the email id, password and reciever's email id.
+<br />
+<b>diffCalculationsWithEmail.py</b> This is same as above but local images are used to test the damage. i.e both the images are local and raspberry pi doesn't freshly capture any images in this library. Hence can be used just to test the libraries.
+
