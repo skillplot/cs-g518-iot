@@ -75,9 +75,9 @@ armv7 is 32 bit
     ```
 4. Initializing nodes for miners: 3 nodes become miners
     ```bash 
-    geth init --datadir node1 genesis.json
-    geth init --datadir node2 genesis.json
-    geth init --datadir node3 genesis.json
+    geth init --datadir rpi_node1 genesis.json
+    geth init --datadir rpi_node2 genesis.json
+    geth init --datadir rpi_node3 genesis.json
     ```
 5. Add account to all nodes (Optional). Do remember the password and other details which we have entered; Refer .gitignore file
     ```bash

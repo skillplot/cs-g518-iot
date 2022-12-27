@@ -140,6 +140,9 @@ We are going to create three nodes on Private Ethereum Blockchain that is Go eth
     # -To send some Wei
     eth.sendTransaction({to: "", from: eth.accounts[0],value: 25000})
     eth.sendTransaction({to: "0x8e0ee9a4fc2302b15a61aca22f7f95c829be1583", from: eth.accounts[0],value: 26000000000000000000})
+    # -To kill the blockchain
+     kill -INT "43872"
+
 
     ```
 
