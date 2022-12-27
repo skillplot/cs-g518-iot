@@ -54,7 +54,7 @@ while(True):
     roadCopyImg = roadImg.copy()
 
     #importing model weights and config file
-    net = cv2.dnn.readNet('project_files/yolov4_tiny.weights', 'project_files/yolov4_tiny.cfg')
+    net = cv2.dnn.readNet('/home/pi/pothole-detectionTest/project_files/yolov4_tiny.weights', '/home/pi/pothole-detectionTest/project_files/yolov4_tiny.cfg')
     model = cv2.dnn_DetectionModel(net)
     model.setInputParams(scale=1 / 255, size=(416, 416), swapRB=True)
     classIds, scores, boxes = model.detect(roadImg, confThreshold=0.6, nmsThreshold=0.4)
