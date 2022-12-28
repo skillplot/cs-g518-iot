@@ -1,7 +1,7 @@
 Road damage detection without comparision(i.e old image is not needed). </br>
 Download the entire version2 onto your Raspberry pi. </br>
 Connect to powerbank as the power source.</br>
-Only the <h3>potholeDetectPiCamSchedule</h3> above code file needs to be executed on the raspberry pi. Other files in the current directory are the alternate versions for specific use cases. </br>
+Only the <h3>potholeDetectPiCamSchedule.py</h3> above code file needs to be executed on the raspberry pi. Other files in the current directory are the alternate versions for specific use cases as mentioned in their names. </br>
 Make sure the weights and config file are not disturbed. </br>
 </br>
 Update the paths, emails(sender and reciever) and password</br>
