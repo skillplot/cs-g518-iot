@@ -2,6 +2,7 @@
 
 * [docs](docs/index.md)
 * [iot.skillplot.org](https://iot.skillplot.org/)
+* [List of Projects](projects.md)
 
 
 ## Instructions to upload to repo
@@ -9,8 +10,8 @@
 ### Project work
 
 
-* **Project** is to be uploaded under respective year session directory. For session `sem-1-2022-23` create a directory with `<name>-<studentID>` in this format: `projects/sem-1-2022-23/<name>-<studentID>`.
-    * Example: `projects/sem-1-2022-23/mohan-2019phxp0119p`
+* **Project** is to be uploaded under respective year session directory. For session `sem-1-2022-23` create a directory with `<name>-<studentID-or-Name>` in this format: `projects/sem-1-2022-23/<name>-<studentID-or-Name>`.
+    * Example: `projects/sem-1-2022-23/mohan-xxx`
 * All the code, configuration, required setup and usage instructions to be made available in the directory itself.
 * Documentation is to be created in the markdown (.md) format
 * Any project reports, research reports can be in  markdown (.md) format, but preferrably in LaTeX format
@@ -19,8 +20,7 @@
 ```bash
 ├── projects
 │   └── sem-1-2022-23 ## proejcts for Semester-1, 2022-23 session
-│       ├── shivam-2021phxp0469p
-│       └── <name>-<studentID> ## add project directory in this naming convetion
+│       └── <name>-<studentID-or-Name> ## add project directory in this naming convetion
 ```
 
 ### TAship Work items
@@ -43,8 +43,8 @@
 
 
 
-* **Lab code** is to be uploaded under respective year session directory. For session `sem-1-2022-23` create a directory with `<name>-<studentID>` in this format: `labs/sem-1-2022-23/<name>-<studentID>`.
-    * Example: `lab/sem-1-2022-23/mohan-2019phxp0119p`
+* **Lab code** is to be uploaded under respective year session directory. For session `sem-1-2022-23` create a directory with `<name>-<studentID-or-Name>` in this format: `labs/sem-1-2022-23/<name>-<studentID-or-Name>`.
+    * Example: `lab/sem-1-2022-23/mohan-xxx`
 * All the code, configuration, required setup and usage instructions to be made available in the directory itself.
 * Documentation is to be created in the markdown (.md) format
 
@@ -67,7 +67,7 @@
 ├── projects
 │   └── sem-1-2022-23 ## proejcts for Semester-1, 2022-23 session
 │       ├── shivam-2021phxp0469p
-│       └── <name>-<studentID> ## add project directory in this naming convetion
+│       └── <name>-<studentID-or-Name> ## add project directory in this naming convetion
 ├── requirements
 ├── scripts
 ├── src
